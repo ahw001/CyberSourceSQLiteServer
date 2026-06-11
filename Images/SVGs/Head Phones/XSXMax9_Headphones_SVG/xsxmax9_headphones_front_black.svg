@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- XSX Max 9 - Compact SVG | Colorway: black -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bandGrad-black" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1c20"/><stop offset="100%" stop-color="#0f1114"/>
+    </linearGradient>
+    <linearGradient id="cupGrad-black" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1c20"/><stop offset="100%" stop-color="#2a2d33"/>
+    </linearGradient>
+    <linearGradient id="cushGrad-black" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#202329"/><stop offset="100%" stop-color="#3a3f48"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M 232 252 A 300 300 0 0 1 568 252" fill="none" stroke="url(#bandGrad-black)"
+        stroke-width="40" stroke-linecap="round"/>
+
+  <path d="M 232 248 H 232 A 18 18 0 0 1 250 266 V 318 A 18 18 0 0 1 232 336 H 232 A 18 18 0 0 1 214 318 V 266 A 18 18 0 0 1 232 248 Z"  fill="url(#cupGrad-black)" stroke="#8793a3" stroke-width="3"/>
+  <path d="M 568 248 H 568 A 18 18 0 0 1 586 266 V 318 A 18 18 0 0 1 568 336 H 568 A 18 18 0 0 1 550 318 V 266 A 18 18 0 0 1 568 248 Z" fill="url(#cupGrad-black)" stroke="#8793a3" stroke-width="3"/>
+
+  <path d="M 226 260 H 238 A 96 96 0 0 1 334 356 V 412 A 96 96 0 0 1 238 508 H 226 A 96 96 0 0 1 130 412 V 356 A 96 96 0 0 1 226 260 Z"  fill="url(#cupGrad-black)" stroke="#8793a3" stroke-width="4"/>
+  <path d="M 562 260 H 574 A 96 96 0 0 1 670 356 V 412 A 96 96 0 0 1 574 508 H 562 A 96 96 0 0 1 466 412 V 356 A 96 96 0 0 1 562 260 Z"  fill="url(#cupGrad-black)" stroke="#8793a3" stroke-width="4"/>
+  <path d="M 232 278 H 232 A 84 84 0 0 1 316 362 V 406 A 84 84 0 0 1 232 490 H 232 A 84 84 0 0 1 148 406 V 362 A 84 84 0 0 1 232 278 Z"  fill="url(#cushGrad-black)" stroke="#8793a3" stroke-width="2"/>
+  <path d="M 568 278 H 568 A 84 84 0 0 1 652 362 V 406 A 84 84 0 0 1 568 490 H 568 A 84 84 0 0 1 484 406 V 362 A 84 84 0 0 1 568 278 Z"  fill="url(#cushGrad-black)" stroke="#8793a3" stroke-width="2"/>
+  <path d="M 232 308 H 232 A 54 54 0 0 1 286 362 V 406 A 54 54 0 0 1 232 460 H 232 A 54 54 0 0 1 178 406 V 362 A 54 54 0 0 1 232 308 Z"  fill="#3a3f48" opacity="0.85"/>
+  <path d="M 568 308 H 568 A 54 54 0 0 1 622 362 V 406 A 54 54 0 0 1 568 460 H 568 A 54 54 0 0 1 514 406 V 362 A 54 54 0 0 1 568 308 Z"  fill="#3a3f48" opacity="0.85"/>
+  <path d="M 222 344 H 242 A 8 8 0 0 1 250 352 V 416 A 8 8 0 0 1 242 424 H 222 A 8 8 0 0 1 214 416 V 352 A 8 8 0 0 1 222 344 Z" fill="#596473" opacity="0.3"/>
+  <path d="M 558 344 H 578 A 8 8 0 0 1 586 352 V 416 A 8 8 0 0 1 578 424 H 558 A 8 8 0 0 1 550 416 V 352 A 8 8 0 0 1 558 344 Z" fill="#596473" opacity="0.3"/>
+
+  <rect x="645" y="332"
+        width="6" height="104"
+        rx="3" ry="3" fill="#e6b800" opacity="0.25"
+        stroke="#e6b800" stroke-width="2" />
+  <circle cx="648" cy="384" r="12"
+          fill="#e6b800" stroke="white" stroke-width="2" />
+</svg>

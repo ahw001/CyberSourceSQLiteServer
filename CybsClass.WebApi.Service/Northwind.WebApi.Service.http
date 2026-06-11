@@ -1,0 +1,615 @@
+@base_address = https://localhost:7173
+
+GET {{base_address}}/api/Category
+Accept: application/json
+
+###
+
+
+GET {{base_address}}/api/ElectronicProduct
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/SampleInvoiceDetail
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/MerchantSampleDatum
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/MerchantSampleDatum/34
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/session/sessionretrieve/29ad6d04-db3a-4137-8bfe-51cfb12246c2
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/SampleInvoiceDetail
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/products/
+Accept: application/json
+
+###
+
+GET https://localhost:7173/api/products/
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/b2ccustomers/1
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/b2ccustomers/
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/getcustomers/
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/getcustomerjson/
+Accept: application/json
+
+###
+GET {{base_address}}/api/getcustomercount
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/PaymentCardInfo
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/PaymentCardInfo/1
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/PaymentCardInfo/customer/3
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/paymentcard/1
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/customercount
+Accept: application/json
+
+###
+GET {{base_address}}/api/getorders/1
+Accept: application/json
+
+###
+
+GET {{base_address}}/api/orderstest/1
+Accept: application/json
+
+###
+
+
+POST {{base_address}}/api/tokens/combined
+Content-Type: application/json
+Accept: application/json
+
+{
+  "B2cCustomerId": 0,
+  "FirstName": "Adi",
+  "LastName": "Brouwer",
+  "FullName": "Adi Brouwer",
+  "Email": "abrouwer87@list-manage.com",
+  "Address1": "52 Schlimgen Trail",
+  "City": "Punta Gorda",
+  "AdministrativeArea": "FL",
+  "PostalCode": "33982",
+  "Country": "US",
+  "Phone": "941-471-3646",
+  "MerchantCustomerID": "76f31529-e4fa-4ddf-9a15-2ceae52b63f6",
+  "PaymentMethod": "Credit/Debit",
+  "PreAuthOrOnDeviceTip": "Standard",
+  "InvoiceType": "Draft",
+  "ShippingSameAsBilling": true,
+  "SaveFormData": true,
+  "PerformZeroAuth": false,
+  "AccountNumber": "4622943127013713",
+  "ExpMonth": "12",
+  "ExpYear": "2027",
+  "Cvv": "043",
+  "CardType": "001",
+  "MarkedForCapture": false,
+  "ActionTokenTypes": [
+    "instrumentIdentifier"
+  ],
+  "TotalAmount": 81.5000,
+  "Currency": "USD",
+  "OnDeviceTip": false,
+  "PreAuthOnly": false,
+  "PreAuthTip": false,
+  "IncrementalAuth": false,
+  "Freight": {},
+  "AmountDetails": {},
+  "LineItem": {},
+  "InvoiceInformation": {
+    "SendImmediately": false
+  },
+  "AdditionalInformation": {},
+  "Cart": [],
+  "LineItems": [],
+  "ErrorObject": {
+    "CreatedAt": "0001-01-01T00:00:00"
+  },
+  "DbErrorObject": {
+    "CreatedAt": "0001-01-01T00:00:00"
+  }
+}
+
+###
+
+POST {{base_address}}/api/employees
+
+###
+
+GET {{base_address}}/
+
+###
+
+GET {{base_address}}/api/B2cCustomer
+
+###
+
+GET {{base_address}}/api/B2cCustomer/paging/21/10
+
+###
+
+POST {{base_address}}/api/cloudpos/bearer
+Accept: application/json
+
+{
+}
+###
+
+POST {{base_address}}/api/semiintpos/initialconnect
+Accept: application/json
+
+{
+}
+###
+
+POST {{base_address}}/api/semiintpos/simplesale
+Accept: application/json
+
+{
+}
+###
+
+POST {{base_address}}/api/pos/sale
+Accept: application/json
+
+{
+}
+
+###
+
+POST {{base_address}}/api/paypal/createorder
+Content-Type: application/json
+Accept: application/json
+
+{
+  "MerchantReferenceCode": "PP-ORDER-001",
+  "FirstName": "Adi",
+  "LastName": "Brouwer",
+  "Email": "abrouwer87@list-manage.com",
+  "Address1": "52 Schlimgen Trail",
+  "City": "Punta Gorda",
+  "AdministrativeArea": "FL",
+  "PostalCode": "33982",
+  "Phone": "941-471-3646",
+  "TotalAmount": 81.50,
+  "PayPalTransactionDetails": {
+    "PayPalReturnUrl": "https://example.com/paypal/return",
+    "PayPalSuccessUrl": "https://example.com/paypal/success"
+  }
+}
+###
+
+POST {{base_address}}/api/session/sessionstore
+Accept: application/json
+
+{
+  "CustData": [
+    {
+      "B2cCustomerId": 0,
+      "FirstName": "Ambrosio",
+      "LastName": "Cutbush",
+      "MiddleName": "none",
+      "Title": "none",
+      "District": "none",
+      "Email": "acutbush21@tmall.com",
+      "Address1": "8740 Iowa Pass",
+      "Address2": "none",
+      "Address3": "none",
+      "BuildingNumber": "none",
+      "PhoneType": "none",
+      "City": "Fayetteville",
+      "AdministrativeArea": "NC",
+      "PostalCode": "28305",
+      "Country": "US",
+      "Phone": "910-595-6816",
+      "MerchantCustomerID": "",
+      "PaymentMethod": "Credit/Debit",
+      "PreAuthOrOnDeviceTip": "Standard",
+      "InvoiceType": "Draft",
+      "ShippingSameAsBilling": false,
+      "SaveFormData": false,
+      "PerformZeroAuth": false,
+      "MarkedForCapture": false,
+      "TotalAmount": 49.7300,
+      "CompanyName": "none",
+      "CompanyAddress1": "8740 Iowa Pass",
+      "CompanyAdministrativeArea": "NC",
+      "CompanyBuildingNumber": "none",
+      "CompanyCountry": "US",
+      "CompanyDistrict": "none",
+      "CompanyLocality": "none",
+      "CompanyPostalCode": "28305",
+      "ShippingFirstName": "Ambrosio",
+      "ShippingLastName": "Cutbush",
+      "ShippingAddress1": "8740 Iowa Pass",
+      "ShippingAddress2": "none",
+      "ShippingAddress3": "none",
+      "ShippingBuildingNumber": "none",
+      "ShippingPhoneType": "none",
+      "ShippingCity": "Fayetteville",
+      "ShippingAdministrativeArea": "NC",
+      "ShippingPostalCode": "28305",
+      "ShippingCountry": "US",
+      "ShippingPhone": "910-595-6816",
+      "Currency": "USD",
+      "OnDeviceTip": false,
+      "PreAuthOnly": false,
+      "PreAuthTip": false,
+      "IncrementalAuth": false,
+      "Freight": {},
+      "AmountDetails": {},
+      "LineItem": {},
+      "InvoiceInformation": {
+        "SendImmediately": false
+      },
+      "AdditionalInformation": {},
+      "Cart": [
+        {
+          "productId": 24,
+          "productName": "Guaran\u00E1 Fant\u00E1stica",
+          "supplierId": 10,
+          "categoryId": 1,
+          "quantityPerUnit": "12 - 355 ml cans",
+          "unitPrice": 4.5000,
+          "unitsInStock": 20,
+          "unitsOnOrder": 0,
+          "reorderLevel": 0,
+          "discontinued": true
+        },
+        {
+          "productId": 25,
+          "productName": "NuNuCa Nu\u00DF-Nougat-Creme",
+          "supplierId": 11,
+          "categoryId": 3,
+          "quantityPerUnit": "20 - 450 g glasses",
+          "unitPrice": 14.0000,
+          "unitsInStock": 76,
+          "unitsOnOrder": 0,
+          "reorderLevel": 30,
+          "discontinued": false
+        },
+        {
+          "productId": 26,
+          "productName": "Gumb\u00E4r Gummib\u00E4rchen",
+          "supplierId": 11,
+          "categoryId": 3,
+          "quantityPerUnit": "100 - 250 g bags",
+          "unitPrice": 31.2300,
+          "unitsInStock": 15,
+          "unitsOnOrder": 0,
+          "reorderLevel": 0,
+          "discontinued": false
+        }
+      ],
+      "LineItems": [],
+      "ErrorObject": {},
+      "DbErrorObject": {}
+    },
+    {
+      "B2cCustomerId": 0,
+      "FirstName": "Ambrosio",
+      "LastName": "Cutbush",
+      "MiddleName": "none",
+      "Title": "none",
+      "District": "none",
+      "Email": "acutbush21@tmall.com",
+      "Address1": "8740 Iowa Pass",
+      "Address2": "none",
+      "Address3": "none",
+      "BuildingNumber": "none",
+      "PhoneType": "none",
+      "City": "Fayetteville",
+      "AdministrativeArea": "NC",
+      "PostalCode": "28305",
+      "Country": "US",
+      "Phone": "910-595-6816",
+      "MerchantCustomerID": "",
+      "PaymentMethod": "Credit/Debit",
+      "PreAuthOrOnDeviceTip": "Standard",
+      "InvoiceType": "Draft",
+      "ShippingSameAsBilling": false,
+      "SaveFormData": false,
+      "PerformZeroAuth": false,
+      "MarkedForCapture": false,
+      "TotalAmount": 49.7300,
+      "CompanyName": "none",
+      "CompanyAddress1": "8740 Iowa Pass",
+      "CompanyAdministrativeArea": "NC",
+      "CompanyBuildingNumber": "none",
+      "CompanyCountry": "US",
+      "CompanyDistrict": "none",
+      "CompanyLocality": "none",
+      "CompanyPostalCode": "28305",
+      "ShippingFirstName": "Ambrosio",
+      "ShippingLastName": "Cutbush",
+      "ShippingAddress1": "8740 Iowa Pass",
+      "ShippingAddress2": "none",
+      "ShippingAddress3": "none",
+      "ShippingBuildingNumber": "none",
+      "ShippingPhoneType": "none",
+      "ShippingCity": "Fayetteville",
+      "ShippingAdministrativeArea": "NC",
+      "ShippingPostalCode": "28305",
+      "ShippingCountry": "US",
+      "ShippingPhone": "910-595-6816",
+      "Currency": "USD",
+      "OnDeviceTip": false,
+      "PreAuthOnly": false,
+      "PreAuthTip": false,
+      "IncrementalAuth": false,
+      "Freight": {},
+      "AmountDetails": {},
+      "LineItem": {},
+      "InvoiceInformation": {
+        "SendImmediately": false
+      },
+      "AdditionalInformation": {},
+      "Cart": [
+        {
+          "productId": 24,
+          "productName": "Guaran\u00E1 Fant\u00E1stica",
+          "supplierId": 10,
+          "categoryId": 1,
+          "quantityPerUnit": "12 - 355 ml cans",
+          "unitPrice": 4.5000,
+          "unitsInStock": 20,
+          "unitsOnOrder": 0,
+          "reorderLevel": 0,
+          "discontinued": true
+        },
+        {
+          "productId": 25,
+          "productName": "NuNuCa Nu\u00DF-Nougat-Creme",
+          "supplierId": 11,
+          "categoryId": 3,
+          "quantityPerUnit": "20 - 450 g glasses",
+          "unitPrice": 14.0000,
+          "unitsInStock": 76,
+          "unitsOnOrder": 0,
+          "reorderLevel": 30,
+          "discontinued": false
+        },
+        {
+          "productId": 26,
+          "productName": "Gumb\u00E4r Gummib\u00E4rchen",
+          "supplierId": 11,
+          "categoryId": 3,
+          "quantityPerUnit": "100 - 250 g bags",
+          "unitPrice": 31.2300,
+          "unitsInStock": 15,
+          "unitsOnOrder": 0,
+          "reorderLevel": 0,
+          "discontinued": false
+        }
+      ],
+      "LineItems": [],
+      "ErrorObject": {},
+      "DbErrorObject": {}
+    }
+  ],
+  "Value": "2ee221c1-72ee-4c1c-9c74-d0d11504b800"
+}
+###
+
+POST {{base_address}}/api/pos/followon
+Accept: application/json
+
+{
+}
+###
+
+
+POST {{base_address}}/api/payerauth/payerauthsetup
+Accept: application/json
+
+{
+}
+###
+
+POST {{base_address}}/api/MerchantBoarding/blankcreatemerchant
+Accept: application/json
+
+{
+}
+###
+
+POST {{base_address}}/api/MerchantBoarding/blankcreattransemerchant
+Accept: application/json
+
+{
+}
+###
+
+POST {{base_address}}/api/MerchantBoarding/getmerchantdetails
+Accept: application/json
+
+{
+}
+###
+
+POST {{base_address}}/api/unified/unifiedpayment
+Content-Type: application/json
+
+{
+  "eyJraWQiOiIwOHRiQ3BDQ2FqdTR0eUtic1MxNkZvZDZVT3pZRW9nZyIsImFsZyI6IlJTMjU2In0.eyJpc3MiOiJGbGV4LzA4IiwiZXhwIjoxNzIyNDQxNDI1LCJ0eXBlIjoiZ2RhLTAuOS4wIiwiaWF0IjoxNzIyNDQwNTI1LCJqdGkiOiIxRTFPWFJHMTlUQ1JLWEY1NlJPSFUxT1k1VVJRWU4wU1VNS0dSODVJWVIzTVlXWEtHSUtWNjZBQTVFRDE1M0FEIiwiY29udGVudCI6eyJvcmRlckluZm9ybWF0aW9uIjp7ImJpbGxUbyI6eyJsYXN0TmFtZSI6e30sImZpcnN0TmFtZSI6e30sInBob25lTnVtYmVyIjp7fSwiZW1haWwiOnt9fSwiYW1vdW50RGV0YWlscyI6eyJ0b3RhbEFtb3VudCI6e30sImN1cnJlbmN5Ijp7fX0sInNoaXBUbyI6eyJsYXN0TmFtZSI6e30sImZpcnN0TmFtZSI6e30sImNvdW50cnkiOnt9LCJhZGRyZXNzMSI6e30sInBvc3RhbENvZGUiOnt9LCJsb2NhbGl0eSI6e30sImJ1aWxkaW5nTnVtYmVyIjp7fSwiYWRtaW5pc3RyYXRpdmVBcmVhIjp7fX19LCJwYXltZW50SW5mb3JtYXRpb24iOnsiY2FyZCI6eyJleHBpcmF0aW9uWWVhciI6eyJ2YWx1ZSI6IjIwMjUifSwibnVtYmVyIjp7Im1hc2tlZFZhbHVlIjoiWFhYWFhYWFhYWFhYMTExMSIsImJpbiI6IjQxMTExMSJ9LCJzZWN1cml0eUNvZGUiOnt9LCJleHBpcmF0aW9uTW9udGgiOnsidmFsdWUiOiIwMiJ9LCJ0eXBlIjp7InZhbHVlIjoiMDAxIn19fX19.c_Epyz5aikaCXgIxCcQYx0HT3163oi2TvfXSJYozAw6Md4Ru6bYPVKDD2umLeLHBkd9qbW2TylZMn-Wk1uM0_pFMURLlLSYvkoQ9abjVYddo0wRVpHuYjkuq7VVLo9wApJMrsuUDkZB5FBse5_1d8vhMxsIbUC0K3z0UWa6M7dKN3-4fLSDL1nZNuOGkb0UXeZghwcjZBmlwrZH3ZQJ8aA1lFPM7NGN2eAmhKrG_-rYwN3UOteB2gIqqghFi3oppxy_1gw50l5aa0RVc68rgjyszLv8kPfwd9wr1Z6YRZXr_70mV9e4MaFd0gf3Pg4JvsMw3tCRgEOfTlq8yDHivhw"
+}
+###
+
+POST {{base_address}}/api/products
+Content-Type: application/json
+
+{
+  "productName": "Tina's Oreo Cookies",
+  "UnitPrice": 44.05,
+  "unitsInStock": 200
+}
+###
+
+
+POST {{base_address}}/api/ntdecrypt
+Content-Type: application/json
+
+{
+}
+###
+
+POST {{base_address}}/api/tokens/customer
+Content-Type: application/json
+
+{
+
+  "MerchantCustomerID": "123Adam",
+  "Email": "adam@test.com"
+}
+###
+
+POST {{base_address}}/api/tokens/flex
+Content-Type: application/json
+
+{
+}
+###
+
+POST {{base_address}}/api/followontrans
+Content-Type: application/json
+
+{
+  "TransactionId": "",
+  "TransactionType": "SALE",
+  "OriginalTransactionType": 0,
+  "CurrentTransactionType": null,
+  "TransactionState": null,
+  "TransactionStatus": null,
+  "TransactionOrderId": "9",
+  "OriginalTransactionId": "7132349827376446503954",
+  "TransactionAmount": "110.70",
+  "ReconciliationId": "NUM76V2QGK3B",
+  "JsonTransactionStateValues": null,
+  "FollowOnTransaction": 8
+}
+###
+
+
+POST {{base_address}}/api/authtransaction
+Content-Type: application/json
+
+{
+    "B2cCustomerId": 0,
+    "FirstName": "Conrado",
+    "LastName": "Hollidge",
+    "FullName": "Conrado Hollidge",
+    "Email": "chollidgea5@ameblo.jp",
+    "Address1": "9690 Hoepker Terrace",
+    "Address2": "Room 1640",
+    "City": "Morgantown",
+    "Region": "WV",
+    "PostalCode": "26505",
+    "Country": "US",
+    "Phone": "304-234-2570",
+    "PaymentMethod": "Credit/Debit",
+    "ShippingSameAsBilling": true,
+    "SaveFormData": true,
+    "AccountNumber": "5120343287499758",
+    "ExpMonth": "12",
+    "ExpYear": "2027",
+    "Cvv": "123",
+    "TotalAmount": "123.40"
+}
+###
+
+POST {{base_address}}/api/merchantboarding/createmerchant
+Content-Type: application/json
+Accept: application/json
+
+{
+  "ParentOrganizationId": "ahw001_portfolio",
+  "Status": "LIVE",
+  "Type": "TRANSACTING",
+  "Configurable": "TRUE",
+  "Country": "US",
+  "Address1": "3916 Hermalinda St",
+  "PostalCode": "78723",
+  "AdministrativeArea": "TX",
+  "Locality": "Austin",
+  "BusinessContactFirstName": "Adam",
+  "BusinessContactLastName": "Williams",
+  "BusinessContactPhoneNumber": "512-529-1902",
+  "BusinessContactEmail": "ahw001@outlook.com",
+  "TechnicalContactFirstName": "Adam",
+  "TechnicalContactLastName": "Williams",
+  "TechnicalContactPhoneNumber": "512-529-1902",
+  "TechnicalContactEmail": "ahw001@outlook.com",
+  "EmergencyContactFirstName": "Adam",
+  "EmergencyContactLastName": "Williams",
+  "EmergencyContactPhoneNumber": "512-529-1902",
+  "EmergencyContactEmail": "ahw001@outlook.com",
+  "Name": "Adam Test Merchant",
+  "WebsiteUrl": "https://www.testccprocessor.com",
+  "BusinessInformationPhoneNumber": "512-529-1902",
+  "BusinessInformationTimeZone": "America/Chicago",
+  "MerchantCategoryCode": 5999,
+  "VirtualTerminal": false,
+  "UnifiedCheckout": false,
+  "TokenManagementService": false,
+  "PayerAuthentication": false,
+  "PayByLink": false,
+  "CustomerInvoicing": false,
+  "Tax": false,
+  "DecisionManager": false,
+  "CardProcessing": false,
+  "OrganizationMerchant": false,
+  "StrutualMerchant": false,
+  "TransactingMerchant": true,
+  "CybsReadyTerminal": false
+}
+###

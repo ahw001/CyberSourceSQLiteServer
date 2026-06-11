@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="10.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="10.0.2" />
+    <PackageReference Include="NuGet.Packaging" Version="6.14.3" />
+    <PackageReference Include="NuGet.Protocol" Version="6.14.3" />
+    <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.17.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CybsClass.Cybersource\CybsClass.Cybersource.csproj" />
+    <ProjectReference Include="..\CybsClass.DataContext.Sqlite\CybsClass.DataContext.Sqlite.csproj" />
+    <ProjectReference Include="..\CybsClass.EntityModels.Sqlite\CybsClass.EntityModels.Sqlite.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- URL endpoint method lookup -->
+    <Content Update="urlEndpoints.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+
+    <!-- Boarding configuration -->
+    <Content Update="boardingSettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+
+    <!-- REST keys -->
+    <Content Include="..\CybsClass.Cybersource\Resource\restkeys\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+      <TargetPath>Resource\restkeys\%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+    </Content>
+
+    <!-- P12 certs -->
+    <Content Include="..\CybsClass.Cybersource\Resource\**\*.p12">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+      <TargetPath>Resource\certs\%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+    </Content>
+
+    <!-- MLE PEM certs -->
+    <Content Include="..\CybsClass.Cybersource\Resource\mle\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+      <TargetPath>Resource\mle\%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+    </Content>
+
+    <!-- Legacy MLE keypair -->
+    <Content Include="..\CybsClass.Cybersource\Resource\key\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+      <TargetPath>Resource\key\%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+    </Content>
+  </ItemGroup>
+
+
+  </Project>

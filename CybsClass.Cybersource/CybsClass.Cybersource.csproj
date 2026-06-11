@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resource\keys\**" />
+    <Compile Remove="Resource\restkeys\**" />
+    <EmbeddedResource Remove="Resource\keys\**" />
+    <EmbeddedResource Remove="Resource\restkeys\**" />
+    <None Remove="Resource\keys\**" />
+    <None Remove="Resource\restkeys\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jose-jwt" Version="5.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.5" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.17.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CybsClass.DataContext.Sqlite\CybsClass.DataContext.Sqlite.csproj" />
+    <ProjectReference Include="..\CybsClass.EntityModels.Sqlite\CybsClass.EntityModels.Sqlite.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logs\" />
+    <Folder Include="Logs\" />
+    <Folder Include="Models\BaseData\Boarding\" />
+  </ItemGroup>
+
+</Project>

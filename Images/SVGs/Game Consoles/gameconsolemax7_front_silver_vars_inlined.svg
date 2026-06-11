@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg aria-labelledby="title desc" role="img" viewBox="0 0 1100 1600" xmlns="http://www.w3.org/2000/svg">
+<title id="title">GameConsoleMax 7 — Front</title>
+<desc id="desc">Generic Xbox-style tower front view, transparent background.</desc> 
+<!-- glow filter for accent logo -->
+<defs>
+<filter height="200%" id="glow" width="200%" x="-50%" y="-50%">
+<feGaussianBlur in="SourceGraphic" result="b" stdDeviation="3.5"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+<!-- ground shadow -->
+<ellipse class="shadow" cx="550" cy="1500" opacity=".45" rx="360" ry="45" style="fill: rgba(0,0,0,.25)"/>
+<!-- console body -->
+<rect class="tower" height="1220" rx="36" style="fill: #d9dde3; stroke: #b9c0ca; stroke-width: 10" width="600" x="250" y="140"/>
+<rect class="bevel" height="1180" rx="30" style="fill: none; stroke: rgba(0,0,0,.08); stroke-width: 8" width="560" x="270" y="160"/>
+<!-- vent grid -->
+<g transform="translate(290,200)"> <circle class="dot" cx="20" cy="20" r="8" style="fill: #111419"/>
+<circle class="dot" cx="80" cy="20" r="8" style="fill: #111419"/>
+<circle class="dot" cx="140" cy="20" r="8" style="fill: #111419"/>
+<circle class="dot" cx="200" cy="20" r="8" style="fill: #111419"/>
+<circle class="dot" cx="260" cy="20" r="8" style="fill: #111419"/>
+<circle class="dot" cx="320" cy="20" r="8" style="fill: #111419"/>
+<circle class="dot" cx="380" cy="20" r="8" style="fill: #111419"/>
+<circle class="dot" cx="440" cy="20" r="8" style="fill: #111419"/>
+<circle class="dot" cx="20" cy="80" r="8" style="fill: #111419"/>
+<circle class="dot" cx="80" cy="80" r="8" style="fill: #111419"/>
+<circle class="dot" cx="140" cy="80" r="8" style="fill: #111419"/>
+<circle class="dot" cx="200" cy="80" r="8" style="fill: #111419"/>
+<circle class="dot" cx="260" cy="80" r="8" style="fill: #111419"/>
+<circle class="dot" cx="320" cy="80" r="8" style="fill: #111419"/>
+<circle class="dot" cx="380" cy="80" r="8" style="fill: #111419"/>
+<circle class="dot" cx="440" cy="80" r="8" style="fill: #111419"/>
+<circle class="dot" cx="20" cy="140" r="8" style="fill: #111419"/>
+<circle class="dot" cx="80" cy="140" r="8" style="fill: #111419"/>
+<circle class="dot" cx="140" cy="140" r="8" style="fill: #111419"/>
+<circle class="dot" cx="200" cy="140" r="8" style="fill: #111419"/>
+<circle class="dot" cx="260" cy="140" r="8" style="fill: #111419"/>
+<circle class="dot" cx="320" cy="140" r="8" style="fill: #111419"/>
+<circle class="dot" cx="380" cy="140" r="8" style="fill: #111419"/>
+<circle class="dot" cx="440" cy="140" r="8" style="fill: #111419"/>
+<circle class="dot" cx="20" cy="200" r="8" style="fill: #111419"/>
+<circle class="dot" cx="80" cy="200" r="8" style="fill: #111419"/>
+<circle class="dot" cx="140" cy="200" r="8" style="fill: #111419"/>
+<circle class="dot" cx="200" cy="200" r="8" style="fill: #111419"/>
+<circle class="dot" cx="260" cy="200" r="8" style="fill: #111419"/>
+<circle class="dot" cx="320" cy="200" r="8" style="fill: #111419"/>
+<circle class="dot" cx="380" cy="200" r="8" style="fill: #111419"/>
+<circle class="dot" cx="440" cy="200" r="8" style="fill: #111419"/>
+<circle class="dot" cx="20" cy="260" r="8" style="fill: #111419"/>
+<circle class="dot" cx="80" cy="260" r="8" style="fill: #111419"/>
+<circle class="dot" cx="140" cy="260" r="8" style="fill: #111419"/>
+<circle class="dot" cx="200" cy="260" r="8" style="fill: #111419"/>
+<circle class="dot" cx="260" cy="260" r="8" style="fill: #111419"/>
+<circle class="dot" cx="320" cy="260" r="8" style="fill: #111419"/>
+<circle class="dot" cx="380" cy="260" r="8" style="fill: #111419"/>
+<circle class="dot" cx="440" cy="260" r="8" style="fill: #111419"/>
+<circle class="dot" cx="20" cy="320" r="8" style="fill: #111419"/>
+<circle class="dot" cx="80" cy="320" r="8" style="fill: #111419"/>
+<circle class="dot" cx="140" cy="320" r="8" style="fill: #111419"/>
+<circle class="dot" cx="200" cy="320" r="8" style="fill: #111419"/>
+<circle class="dot" cx="260" cy="320" r="8" style="fill: #111419"/>
+<circle class="dot" cx="320" cy="320" r="8" style="fill: #111419"/>
+<circle class="dot" cx="380" cy="320" r="8" style="fill: #111419"/>
+<circle class="dot" cx="440" cy="320" r="8" style="fill: #111419"/>
+</g>
+<!-- slot, ports, button -->
+<rect class="slot" height="540" opacity=".75" rx="5" style="fill: #12151a" width="10" x="760" y="420"/>
+<circle class="power" cx="330" cy="300" r="24" style="fill: none; stroke: #0b0d10; stroke-width: 12"/>
+<circle class="led" cx="330" cy="300" r="4" style="fill: #4db2ff"/>
+<g transform="translate(350,1120)">
+<rect class="usb" height="22" rx="6" style="fill: #a5adba" width="110" x="0" y="0"/>
+<rect class="usb" height="22" rx="6" style="fill: #a5adba" width="110" x="150" y="0"/>
+</g>
+<!-- front logo (two lines, second glows in accent color) -->
+<text class="logo1" style="font: 900 70px 'Segoe UI', Roboto, system-ui, sans-serif; fill: #0b0d10; letter-spacing: 1px; text-anchor: middle" x="550" y="900">GameConsole</text>
+<text class="logo2" style="font: 800 56px 'Segoe UI', Roboto, system-ui, sans-serif; fill: #4db2ff; text-anchor: middle; filter: url(#glow)" x="550" y="980">Max 7</text>
+<!-- footer labels -->
+<text x="250" y="1400">GameConsoleMax 7</text>
+<text class="small" style="font: 500 24px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: #0b0d10" x="250" y="1440">Front view — Silver</text>
+</svg>

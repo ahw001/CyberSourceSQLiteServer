@@ -1,0 +1,48 @@
+{
+  "font_stack": "system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif",
+  "brand_name": "MobileFirst",
+  "colorways": {
+    "gold": {
+      "frameSide": "#e0c89a",
+      "glassTop": "#1b1710",
+      "bezel": "#0a0907",
+      "frameTop": "#f4e7cf",
+      "glassBottom": "#0c0a06",
+      "text": "#14161a",
+      "bg": "#f6f7fb",
+      "frameEdge": "#a4844b"
+    },
+    "blue": {
+      "frameSide": "#8fb3e8",
+      "glassTop": "#111726",
+      "bezel": "#070a0e",
+      "frameTop": "#cfe2ff",
+      "glassBottom": "#0a0f1b",
+      "text": "#e9edf2",
+      "bg": "#0b0c10",
+      "frameEdge": "#4b6ea8"
+    },
+    "black": {
+      "frameSide": "#2a2c2f",
+      "glassTop": "#0a0a0b",
+      "bezel": "#050607",
+      "frameTop": "#3b3d41",
+      "glassBottom": "#000000",
+      "text": "#e9edf2",
+      "bg": "#0b0c10",
+      "frameEdge": "#1b1d20"
+    },
+    "titanium": {
+      "frameSide": "#9ea3aa",
+      "glassTop": "#1f1f22",
+      "bezel": "#0a0a0c",
+      "frameTop": "#c9ccd1",
+      "glassBottom": "#0b0b0d",
+      "text": "#e9edf2",
+      "bg": "#0b0c10",
+      "frameEdge": "#71757b"
+    }
+  },
+  "accent": "#4da3ff",
+  "series_name": "Tab 11"
+}

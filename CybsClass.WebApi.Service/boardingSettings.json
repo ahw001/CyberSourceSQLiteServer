@@ -1,0 +1,9 @@
+{
+  "BoardingSettings": {
+    "BoardingPackageId": "16982304004",
+    "CardProcessingTemplateId": "C25CE0FC-B5E0-475B-9F51-1A5E0C7F125F",
+    "VirtualTerminalTemplateId": "970413DE-A3D3-4EA6-8D2C-59355EADE62E",
+    "TokenManagementTemplateId": "9ADC8ACA-A4CF-42D2-A26A-FCAF2C574228",
+    "PayerAuthenticationTemplateId": "AF475ACA-6FE6-4675-B5EA-6F9B77241FFA"
+  }
+}

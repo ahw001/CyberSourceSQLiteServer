@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tablet Front • BLACK • Sensor: pill | Generated 2025-11-04 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 2400" width="1400" height="2400" style="--frameTop:#3b3d41; --frameSide:#2a2c2f; --frameEdge:#1b1d20; --bezel:#050607; --glassTop:#0a0a0b; --glassBottom:#000000; --bg:#0b0c10; --text:#e9edf2; --accent:#4da3ff;">
+      <style><![CDATA[
+      /* Variables are applied on the root element via CSS custom properties. */
+      .uiText { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif; }
+      .btnFill { fill:#6e737a; }
+      .sensorFill { fill:#3b3f46; }
+      /* higher contrast text — crisp on dark glass */
+      .hiContrast {
+        paint-order: stroke fill;
+        stroke: rgba(0,0,0,.65);
+        stroke-width: 3px;
+      }
+    ]]></style>
+  <defs>  <linearGradient id="gradFrame" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="var(--frameTop)"/>
+    <stop offset="55%" stop-color="var(--frameSide)"/>
+    <stop offset="100%" stop-color="var(--frameEdge)"/>
+  </linearGradient>
+  <linearGradient id="gradGlass" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="var(--glassTop)"/>
+    <stop offset="100%" stop-color="var(--glassBottom)"/>
+  </linearGradient>
+  <filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feOffset dy="8"/>
+    <feGaussianBlur stdDeviation="12" result="b"/>
+    <feComposite in="SourceAlpha" operator="arithmetic" k2="-1" k3="1"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0"/>
+    <feBlend in2="SourceGraphic" mode="multiply"/>
+  </filter>
+  <filter id="drop" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="#000" flood-opacity=".25"/>
+  </filter>
+  <linearGradient id="gloss" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#fff" stop-opacity=".18"/>
+    <stop offset="30%" stop-color="#fff" stop-opacity=".05"/>
+    <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="reflect" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#fff" stop-opacity=".12"/>
+    <stop offset="65%" stop-color="#fff" stop-opacity=".02"/>
+    <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="brandGlow" cx="50%" cy="40%" r="65%">
+    <stop offset="0%" stop-color="var(--accent)" stop-opacity=".22"/>
+    <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+  </radialGradient></defs>
+  
+  <g transform="translate(100,300) scale(1.0)">
+        <g filter="url(#drop)">
+      <rect x="0" y="0" rx="96" ry="96" width="1200" height="1800" fill="url(#gradFrame)"/>
+      <rect x="36" y="36" rx="84" ry="84" width="1128" height="1728" fill="var(--bezel)"/>
+      <rect x="50" y="50" rx="78" ry="78" width="1100" height="1700" fill="url(#gradGlass)" filter="url(#innerShadow)"/>
+      <rect x="94" y="94" width="1012" height="170" rx="50" fill="url(#reflect)"/>
+      <path d="M140,280 C760,30 940,160 1200,0 L1200,0 L1200,1800 L140,1800 Z" fill="url(#gloss)" opacity=".36"/>
+      <rect x="-10" y="520" width="12" height="190" rx="6" class="btnFill"/>
+      <rect x="-10" y="740" width="12" height="190" rx="6" class="btnFill"/>
+      <rect x="1198" y="640" width="12" height="240" rx="6" class="btnFill"/>
+      <rect x="600" y="100" width="90" height="18" rx="9" class="sensorFill" opacity=".78"/>
+    </g>
+            <rect x="50" y="50" rx="90" ry="90" width="1100" height="1700" fill="url(#brandGlow)"/>
+        <g transform="translate(180, 760)" class="uiText hiContrast">
+          <text x="0" y="0" font-size="140" font-weight="800" fill="var(--text)">MobileFirst</text>
+          <text x="0" y="150" font-size="96" font-weight="700" fill="var(--text)">Tab 11</text>
+          <text x="0" y="270" font-size="48" font-weight="500" fill="var(--text)" opacity=".85">11&quot; edge-to-edge • 120Hz • Slim bezels</text>
+        </g>
+        <g transform="translate(460, 1220)" class="uiText hiContrast">
+          <rect x="0" y="0" rx="32" ry="32" width="620" height="108" fill="rgba(0,0,0,0.28)" stroke="rgba(255,255,255,0.18)"/>
+          <text x="310" y="72" text-anchor="middle" font-size="46" font-weight="700" fill="var(--text)">Preorder</text>
+        </g>
+  </g>
+</svg>
